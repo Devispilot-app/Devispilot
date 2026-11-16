@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devis Pilot</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f5f9;
+      color: #17243b;
+    }
+    header {
+      background: #142b4c;
+      color: white;
+      padding: 25px 20px;
+    }
+    header h1 { margin: 0; font-size: 26px; }
+    header p { color: #cbd5e1; }
+    main { padding: 22px 16px; }
+    .welcome { margin-bottom: 24px; }
+    .welcome h2 { font-size: 23px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .card {
+      background: white;
+      padding: 20px 12px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #0000000c;
+    }
+    .card strong { display: block; font-size: 18px; }
+    .card span { color: #64748b; font-size: 13px; }
+    .action {
+      display: block;
+      width: 100%;
+      margin-top: 22px;
+      padding: 17px;
+      border: 0;
+      border-radius: 10px;
+      background: #1672d4;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      color: #64748b;
+      padding: 25px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DEVIS PILOT</h1>
+    <p>Votre activité, simplement pilotée.</p>
+  </header>
+  <main>
+    <section class="welcome">
+      <h2>Bonjour 👋</h2>
+      <p>Bienvenue dans votre espace professionnel.</p>
+    </section>
+    <section class="cards">
+      <div class="card">👥<strong>Clients</strong><span>Gérer mes clients</span></div>
+      <div class="card">📄<strong>Devis</strong><span>Créer mes devis</span></div>
+      <div class="card">🧾<strong>Factures</strong><span>Suivre mes factures</span></div>
+      <div class="card">📊<strong>Activité</strong><span>Mon tableau de bord</span></div>
+    </section>
+    <button class="action" onclick="alert('Bienvenue dans Devis Pilot !')">
+      + Nouveau devis
+    </button>
+  </main>
+  <footer>Devis Pilot © 2026</footer>
+</body>
+</html>
